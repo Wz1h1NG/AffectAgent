@@ -1,0 +1,64 @@
+cff-version: 1.2.0
+message: "If you use AffectAgent, please cite the following paper."
+title: "AffectAgent: Collaborative Multi-Agent Reasoning for Retrieval-Augmented Multimodal Emotion Recognition"
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/Wz1h1NG/AffectAgent"
+doi: 10.1145/3767308.3835848
+authors:
+  - family-names: Wang
+    given-names: Zeheng
+  - family-names: Yu
+    given-names: Zitong
+  - family-names: Zhu
+    given-names: Yijie
+  - family-names: Zhao
+    given-names: Bo
+  - family-names: Liang
+    given-names: Haochen
+  - family-names: Wang
+    given-names: Taorui
+  - family-names: Xia
+    given-names: Wei
+  - family-names: Zhang
+    given-names: Jiayu
+  - family-names: Liu
+    given-names: Zhishu
+  - family-names: Ma
+    given-names: Hui
+  - family-names: Ma
+    given-names: Fei
+  - family-names: Tian
+    given-names: Qi
+preferred-citation:
+  type: conference-paper
+  title: "AffectAgent: Collaborative Multi-Agent Reasoning for Retrieval-Augmented Multimodal Emotion Recognition"
+  conference:
+    name: "Proceedings of the 34th ACM International Conference on Multimedia"
+  year: 2026
+  doi: 10.1145/3767308.3835848
+  authors:
+    - family-names: Wang
+      given-names: Zeheng
+    - family-names: Yu
+      given-names: Zitong
+    - family-names: Zhu
+      given-names: Yijie
+    - family-names: Zhao
+      given-names: Bo
+    - family-names: Liang
+      given-names: Haochen
+    - family-names: Wang
+      given-names: Taorui
+    - family-names: Xia
+      given-names: Wei
+    - family-names: Zhang
+      given-names: Jiayu
+    - family-names: Liu
+      given-names: Zhishu
+    - family-names: Ma
+      given-names: Hui
+    - family-names: Ma
+      given-names: Fei
+    - family-names: Tian
+      given-names: Qi
