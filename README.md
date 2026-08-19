@@ -313,10 +313,7 @@ If this project is useful in your research, please cite:
   author    = {Wang, Zeheng and Yu, Zitong and Zhu, Yijie and Zhao, Bo and Liang, Haochen and Wang, Taorui and Xia, Wei and Zhang, Jiayu and Liu, Zhishu and Ma, Hui and Ma, Fei and Tian, Qi},
   booktitle = {Proceedings of the 34th ACM International Conference on Multimedia},
   year      = {2026},
-  doi       = {10.1145/3767308.3835848},
-  eprint    = {2604.12735},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.CV}
+  doi       = {10.1145/3767308.3835848}
 }
 ```
 
