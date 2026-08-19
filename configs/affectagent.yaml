@@ -6,7 +6,7 @@ model:
   arch: affectgpt
   model_type: pretrain_vicuna
 
-  # Audio Q-Former and Video Q-Former
+  # Trainable multimodal encoders used by the shared Actor.
   frozen_video_proj: False
   frozen_video_Qformer: False
   frozen_audio_Qformer: False
@@ -15,10 +15,10 @@ model:
   frozen_multi_llama_proj: False
   frozen_llm: False
 
-  multi_fusion_type: attention # attention/qformer
-  video_fusion_type: attention # qformer(default)/mean/attention
-  audio_fusion_type: attention # qformer(default)/mean/attention
-  image_fusion_type: mean       # token(default)/mean
+  multi_fusion_type: attention
+  video_fusion_type: attention
+  audio_fusion_type: attention
+  image_fusion_type: mean
 
   # AffectGPT
   ckpt:   ""
@@ -55,8 +55,8 @@ datasets:
 
   mercaptionplus:
     data_type: video
-    face_or_frame: 'multiframe_audio_frame_text' # 默认是读取 frame or face
-    label_type: 'hybird' # 模型是预测 description 还是 label 呢？
+    face_or_frame: 'multiframe_audio_frame_text'
+    label_type: 'hybird' # Upstream AffectGPT spelling retained for compatibility.
 
 
 # 1. 采用大batch + 三个 80g gpu
@@ -66,7 +66,7 @@ run:
 
   # optimizer
   lr_sched: "linear_warmup_cosine_lr"
-  init_lr: 1e-5 # 3e-5 loss: nan -> 降低 loss 到 2e-5 nan -> 降低 loss 到 1e-5
+  init_lr: 1e-5
   min_lr: 1e-5
   warmup_lr: 1e-6
   weight_decay: 0.05
@@ -75,14 +75,14 @@ run:
   iters_per_epoch: 5000
   warmup_steps: 500
 
-  batch_size_train: 3 # 3 # 这是单一gpu的batch_size；实际batch_size = gpu_num * batch_size_train
-  batch_size_eval:  3 # 3 # 这是单一gpu的batch_size；实际batch_size = gpu_num * batch_size_train
+  batch_size_train: 3
+  batch_size_eval: 3
 
   seed: 42
   num_workers: 4
 
-  amp: True # auto mixed precision, multiplication (fp16), addition (fp32)
-  resume_ckpt_path: null # continue training from resume_ckpt_path
+  amp: True
+  resume_ckpt_path: null
 
   evaluate: False 
   train_splits: ["train"]
@@ -119,9 +119,9 @@ inference:
   base_root: 'output/results'
   
   # inference ckpt
-  ckpt_root: xxx
-  ckpt_name: xxx
-  test_epoch: xxx
-  test_epochs: xxx-xxx
-  skip_epoch: 1 # only process on epoch%10=0 的部分 ckpt_3
+  ckpt_root: ""
+  ckpt_name: ""
+  test_epoch: ""
+  test_epochs: ""
+  skip_epoch: 1
   gpu: 0
