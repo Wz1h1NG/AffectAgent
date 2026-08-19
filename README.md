@@ -5,6 +5,7 @@
 <p align="center"><strong>Official implementation of the ACM Multimedia 2026 paper</strong></p>
 
 <p align="center">
+  <a href="https://arxiv.org/abs/2604.12735"><img src="https://img.shields.io/badge/arXiv-2604.12735-b31b1b?logo=arxiv&logoColor=white" alt="arXiv 2604.12735"></a>
   <a href="https://doi.org/10.1145/3767308.3835848"><img src="https://img.shields.io/badge/Paper-ACM%20MM%202026-6f42c1" alt="Paper"></a>
   <img src="https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white" alt="Python 3.10">
   <img src="https://img.shields.io/badge/PyTorch-2.4.0-EE4C2C?logo=pytorch&logoColor=white" alt="PyTorch 2.4.0">
@@ -312,7 +313,10 @@ If this project is useful in your research, please cite:
   author    = {Wang, Zeheng and Yu, Zitong and Zhu, Yijie and Zhao, Bo and Liang, Haochen and Wang, Taorui and Xia, Wei and Zhang, Jiayu and Liu, Zhishu and Ma, Hui and Ma, Fei and Tian, Qi},
   booktitle = {Proceedings of the 34th ACM International Conference on Multimedia},
   year      = {2026},
-  doi       = {10.1145/3767308.3835848}
+  doi       = {10.1145/3767308.3835848},
+  eprint    = {2604.12735},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV}
 }
 ```
 
